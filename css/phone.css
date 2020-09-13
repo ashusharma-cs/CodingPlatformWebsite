@@ -1,0 +1,75 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar::before{
+    height:100%;
+}
+/* #navbar .logo{
+    margin: 0px;
+    padding: 0px;
+} */
+#navbar ul li{
+    margin: 0px;
+}
+#navbar ul li a{
+    padding: 6px;
+    text-align: center;
+}
+/* section-home */
+#home{
+    align-items: center;
+}
+#home h1{
+    text-align: center;
+    margin-left: 0px;
+    
+    
+}
+.l-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* section-courses */
+.cbox{
+    flex-direction: column;
+}
+.cbox .item{
+    width: 80%;
+}
+/* section-moto */
+#moto::before{
+    height: 550px;
+}
+
+#moto{
+    height: 550px;
+}
+.mbox{
+    flex-direction: column;
+    height: 550px;
+
+}
+.mbox .list{
+    margin-left: 0px;
+}
+.list h1{
+    margin-top: 4px;
+}
+.frame{
+    width: 300px;
+}
+.frame iframe{
+    width: 300px;
+    height: 200px;
+}
+.mbox .list{
+    width: 300px;
+}
+/* section-form */
+.contact-box form{
+    width: 50%;;
+}

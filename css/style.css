@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 111px;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+#navbar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+   
+    align-items: center;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#navbar ul li{
+    list-style: none;
+    margin: 12px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
+#navbar ul li a{
+    border-radius: 20px;
+
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px  5px hotpink;
+}
+
+/*navbar-logo */
+#navbar .logo img{
+    width: 60px;
+    height: 60px;
+}
+#navbar .logo{
+    margin: 12px;
+    padding: 12px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#navbar .logo p{
+    margin-top: 5px;
+    color: white;
+}
+
+/* section-home */
+#home::before{
+    content: "";
+    background: url('../images/pexels-danny-meneses-943096.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 611px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid red; */
+    height: 476px;
+    color: white;
+
+}
+#home h1{
+    margin-left: 10px;
+    /* width: 450px; */
+    word-break: break-word; 
+}
+#home .btn{
+    width: 15%;
+    padding: 12px;
+    margin: 12px 0px 0px 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Grandstander', cursive;
+    transition-property: all;
+    transition-duration: 3s;
+    
+}
+#home .btn:hover{
+    box-shadow: 5px 5px 5px hotpink;
+    background-color: purple;
+    color: white;
+}
+/* section-courses */
+
+#courses{
+    margin-top: 12px;
+}
+#courses h1:nth-child(1){
+    color: teal;
+}
+.cbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cbox p{
+    font-family: 'Ubuntu', sans-serif;
+}
+.cbox .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 500px;
+    margin: 12px;
+    padding: 12px;
+    box-shadow: 2px 2px 6px 0px rgba(155, 155, 155, 0.51);
+
+}
+.cbox .item h1{
+    margin-top: 10px;
+    font-size: 40px;
+}
+.cbox .item img{
+    width: 300px;
+    height: 300px;
+}
+.cbox .item p{
+    text-align: center;
+}
+.cbox .item .visit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visit .link{
+   margin: 12px;
+   text-decoration: none;
+   border: 2px solid black;
+   padding: 12px;
+   border-radius: 20px;
+   color: black;
+   outline: none;
+   background-color: white;
+    
+}
+
+.visit .git:hover{
+    background-color: coral;
+    font-weight: bolder;
+    color: grey;
+}
+.visit .python:hover{
+    background-color: greenyellow;
+    color: navy;
+    font-weight: bolder;
+}
+.visit .web:hover{
+    background-color: hotpink;
+    color: plum;
+    font-weight: bolder;
+}
+.visit .full:hover{
+    background-color: #BA8B02;
+    font-weight: bolder;
+}
+
+/* section-moto */
+#moto::before{
+    content: "";
+    background-image: linear-gradient(to bottom right,#BA8B02,#181818);
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#moto{
+    
+    height: 500px;
+}
+.mbox{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.mbox .list{
+    /* border: 2px solid red; */
+    margin-left: 90px;
+    width: 560px; 
+    height: 315px;
+    font-size: 30px;
+    
+    
+}
+.list ul li{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 12px;
+}
+.list ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+.list ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #BA8B02; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+/* section-form */
+
+#form::before{
+    content: "";
+    background: url('../images/pexels-christina-morillo-1181359.jpg');
+    background-size: cover;
+    /* background-attachment: fixed; */
+    position: absolute;
+    
+    width: 100%;
+    height: 650px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#form{
+    height: 650px;
+    /* border: 2px solid red; */
+}
+#form h1{
+    padding: 12px;
+    color: white;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    outline: none;
+
+}
+.contact-box input[type="submit"]{
+    width: 106%;
+}
+.contact-box input[type="submit"]:hover{
+    cursor: pointer;
+}
+.contact-box label{
+    font-size: 20px;
+    color: white;
+}
+.contact-box form{
+    padding: 12px;
+}
+/* section-foot */
+#foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+/* utility-classes */   
+.h-primary{
+    font-size: 45px;
+    font-family: 'Grandstander', cursive;
+    
+}
+.center{
+    text-align: center;
+}
